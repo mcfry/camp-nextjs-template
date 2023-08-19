@@ -12,6 +12,29 @@ export const metadata: Metadata = {
   description: ""
 }
 
+const pages = [
+  {
+    path: "/",
+    name: "Home"
+  },
+  {
+    path: "/campsites",
+    name: "Campsites"
+  },
+  {
+    path: "/thingstodo",
+    name: "Things to Do"
+  },
+  {
+    path: "/events",
+    name: "Events"
+  },
+  {
+    path: "/about",
+    name: "About"
+  }
+]
+
 export default function RootLayout({
   children
 }: {
@@ -33,18 +56,15 @@ export default function RootLayout({
             className="mr-6"
             alt="bonfire"
           />
-          <Link
-            href="/"
-            className="btn btn-ghost normal-case text-xl text-accent"
-          >
-            Home
-          </Link>
-          <Link
-            href="/campsites"
-            className="btn btn-ghost normal-case text-xl text-accent"
-          >
-            Campsites
-          </Link>
+          {pages.map(page => (
+            <Link
+              key={page.path}
+              href={page.path}
+              className="btn btn-primary normal-case text-xl text-accent"
+            >
+              {page.name}
+            </Link>
+          ))}
         </nav>
 
         <main
