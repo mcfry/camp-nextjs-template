@@ -6,8 +6,8 @@ const mansalva = Mansalva({ weight: "400", subsets: ["latin"] })
 
 export default function InfoEventPanel() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row justify-center items-center lg:space-x-40 relative h-[86rem] lg:h-[56rem]">
-      <div className="flex flex-col items-center lg:items-start w-[16rem] lg:w-[26rem] xl:w-[40rem] h-[40rem] lg:h-[20rem] space-y-10 mt-20 lg:mt-0">
+    <section className="flex flex-col-reverse lg:flex-row justify-center items-center lg:space-x-40 relative h-[92rem] md:h-[86rem] lg:h-[56rem]">
+      <div className="flex flex-col items-center lg:items-start w-[16rem] lg:w-[26rem] xl:w-[40rem] h-[46rem] md:h-[40rem] lg:h-[20rem] space-y-10 mt-20 lg:mt-0">
         <span
           className={clsx(
             "text-2xl md:text-4xl whitespace-nowrap",
@@ -41,7 +41,7 @@ export default function InfoEventPanel() {
         <div
           className={clsx(
             "relative",
-            "after:bg-primary after:absolute after:h-[300px] after:w-[400px] after:ml-8 after:top-[-2rem] after:z-10",
+            "after:bg-primary after:absolute after:h-[300px] after:w-[400px] after:right-[-2rem] after:top-[-2rem] after:z-10",
             "before:bg-accent before:absolute before:h-[300px] before:w-[400px] before:left-[-2rem] before:bottom-[-2rem] before:z-10"
           )}
         >

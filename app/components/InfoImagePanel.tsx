@@ -14,10 +14,15 @@ export default function InfoImagePanel({
   imageAlt: string
 }) {
   return (
-    <section className="flex justify-center items-center space-x-10 relative h-[24rem]">
+    <section
+      className={clsx(
+        "flex lg:flex-row justify-center items-center space-y-10 lg:space-y-0 lg:space-x-10 relative h-[40rem] lg:h-[24rem]",
+        panelType === "left" ? "flex-col" : "flex-col-reverse space-y-reverse"
+      )}
+    >
       {panelType === "left" && (
         <>
-          <div className="flex flex-[11] justify-end">
+          <div className="flex lg:flex-[11] lg:justify-end">
             <div className="flex flex-col space-y-3">
               <div
                 className={clsx(
@@ -45,7 +50,7 @@ export default function InfoImagePanel({
               </div>
             </div>
           </div>
-          <div className="flex-[10]">
+          <div className="lg:flex-[10]">
             <div className="stack">
               <Image
                 src={imageSrc}
@@ -63,7 +68,7 @@ export default function InfoImagePanel({
 
       {panelType === "right" && (
         <>
-          <div className="flex flex-[10] justify-end">
+          <div className="flex lg:flex-[10] lg:justify-end">
             <div className="stack">
               <Image
                 src={imageSrc}
@@ -76,7 +81,7 @@ export default function InfoImagePanel({
               <div className="grid w-[400px] h-[266px] rounded bg-secondary text-secondary-content place-content-center" />
             </div>
           </div>
-          <div className="flex-[11]">
+          <div className="lg:flex-[11]">
             <div className="flex flex-col space-y-3">
               <div
                 className={clsx(

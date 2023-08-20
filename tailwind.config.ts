@@ -22,7 +22,8 @@ const config: Config = {
         tanbase: "#fef8f1"
       },
       screens: {
-        xs: "450px"
+        xs: "450px",
+        "gallery-lg": "840px"
       }
     }
   },
