@@ -18,7 +18,7 @@ export default function Banner() {
         width={0}
         sizes="100vw"
         layout="fill"
-        className="w-full md:h-full object-none absolute top-[-10px]"
+        className="w-full md:h-full object-none absolute !top-[-30px] xs:top-[-10px]"
         style={{ objectPosition: "0% 50%" }}
         priority={true}
         alt="banner"

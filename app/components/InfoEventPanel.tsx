@@ -41,12 +41,18 @@ export default function InfoEventPanel() {
         <div
           className={clsx(
             "relative",
-            "after:bg-primary after:absolute after:h-[300px] after:w-[400px] after:right-[-2rem] after:top-[-2rem] after:z-10",
-            "before:bg-accent before:absolute before:h-[300px] before:w-[400px] before:left-[-2rem] before:bottom-[-2rem] before:z-10"
+            "after:bg-primary after:absolute after:h-[300px] after:w-full after:sm:right-[-2rem] after:top-[-2rem] after:z-10",
+            "before:bg-accent before:absolute before:h-[300px] before:w-full before:sm:left-[-2rem] before:bottom-[-2rem] before:z-10"
           )}
         >
-          <picture className="relative z-20">
-            <Image src="/hiker.jpg" width={400} height={700} alt="hiker" />
+          <picture className="relative z-40">
+            <Image
+              src="/hiker.jpg"
+              className="z-40"
+              width={400}
+              height={700}
+              alt="hiker"
+            />
           </picture>
         </div>
       </div>

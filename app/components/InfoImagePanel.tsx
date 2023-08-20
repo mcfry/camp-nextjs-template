@@ -23,7 +23,7 @@ export default function InfoImagePanel({
       {panelType === "left" && (
         <>
           <div className="flex lg:flex-[11] lg:justify-end">
-            <div className="flex flex-col space-y-3">
+            <div className="flex flex-col items-center xs:items-start space-y-3">
               <div
                 className={clsx(
                   "text-2xl whitespace-nowrap",
@@ -33,13 +33,13 @@ export default function InfoImagePanel({
                 NOMAHEGON LAKE
               </div>
 
-              <p className="w-96">
+              <p className="w-4/5 xs:w-96">
                 Take a swim at Nomahegon, located 2 miles from our campground!
               </p>
 
               <div
                 tabIndex={0}
-                className="w-96 collapse collapse-arrow border border-base-300 bg-primary text-white"
+                className="w-4/5 xs:w-96 collapse collapse-arrow border border-base-300 bg-primary text-white"
               >
                 <div className="collapse-title text-xl font-medium">
                   More Information
@@ -82,7 +82,7 @@ export default function InfoImagePanel({
             </div>
           </div>
           <div className="lg:flex-[11]">
-            <div className="flex flex-col space-y-3">
+            <div className="flex flex-col items-center xs:items-start space-y-3">
               <div
                 className={clsx(
                   "text-2xl whitespace-nowrap",
@@ -92,13 +92,13 @@ export default function InfoImagePanel({
                 NOMAHEGON LAKE
               </div>
 
-              <p className="w-96">
+              <p className="w-4/5 xs:w-96">
                 Take a swim at Nomahegon, located 2 miles from our campground!
               </p>
 
               <div
                 tabIndex={0}
-                className="w-96 collapse collapse-arrow border border-base-300 bg-primary text-white"
+                className="w-4/5 xs:w-96 collapse collapse-arrow border border-base-300 bg-primary text-white"
               >
                 <div className="collapse-title text-xl font-medium">
                   More Information
