@@ -3,10 +3,5 @@ export default function CampsiteLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <section className="flex flex-col justify-content-center items-center">
-      parent
-      {children}
-    </section>
-  )
+  return <section className="flex flex-col">{children}</section>
 }

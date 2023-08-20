@@ -14,7 +14,7 @@ export default function InfoImagePanel({
   imageAlt: string
 }) {
   return (
-    <section className="flex justify-center items-center space-x-10 relative h-[27rem]">
+    <section className="flex justify-center items-center space-x-10 relative h-[24rem]">
       {panelType === "left" && (
         <>
           <div className="flex flex-[11] justify-end">

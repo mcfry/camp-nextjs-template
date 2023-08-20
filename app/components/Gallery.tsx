@@ -10,7 +10,7 @@ export default function Gallery({
   images: { path: string; description: string; alt: string }[]
 }) {
   return (
-    <section className="flex flex-col justify-center items-center h-[80rem]">
+    <section className="flex flex-col justify-center items-center h-[150rem] xl:h-[110rem]">
       <span
         className={clsx(
           "mb-6 text-6xl border-b-2 border-accent",
@@ -19,7 +19,7 @@ export default function Gallery({
       >
         Gallery
       </span>
-      <div className="grid grid-cols-3 grid-rows-3 gap-4">
+      <div className="grid grid-cols-2 grod-rows-6 xl:grid-cols-3 xl:grid-rows-4 gap-4">
         {images.map((image, i) => (
           <div key={i} className="">
             <picture className="relative h-[400px] w-[400px]">

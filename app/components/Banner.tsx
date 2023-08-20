@@ -3,12 +3,12 @@ import "./Banner.css"
 
 export default function Banner() {
   return (
-    <section className="flex flex-col justify-center items-center relative h-[40rem]">
+    <section className="flex flex-col justify-center items-center top-[0%] relative h-[18rem] xs:h-[22rem] sm:h[30rem] md:h-[35rem] lg:h-[40rem]">
       <div className="flex flex-col justify-center items-center font-bold h-full z-10">
-        <span className="text-9xl text-white layered-text-shadow">
+        <span className="text-5xl sm:text-7xl md:text-9xl text-white layered-text-shadow">
           OPEN NOW
         </span>
-        <span className="text-4xl text-white layered-text-shadow-smaller">
+        <span className="sm:text-2xl md:text-4xl text-white layered-text-shadow-smaller">
           Book your adventure today!
         </span>
       </div>
@@ -17,14 +17,15 @@ export default function Banner() {
         height={0}
         width={0}
         sizes="100vw"
-        className="w-full h-full object-none absolute"
+        layout="fill"
+        className="w-full md:h-full object-none absolute top-[-10px]"
         style={{ objectPosition: "0% 50%" }}
         priority={true}
         alt="banner"
       />
 
       {/* Banner Curve */}
-      <div className="custom-shape-divider-bottom-1692385678">
+      <div className="hidden lg:block custom-shape-divider-bottom-1692385678">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

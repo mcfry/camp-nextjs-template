@@ -20,6 +20,9 @@ const config: Config = {
         primary: "#401e23",
         accent: "#75af2e",
         tanbase: "#fef8f1"
+      },
+      screens: {
+        xs: "450px"
       }
     }
   },

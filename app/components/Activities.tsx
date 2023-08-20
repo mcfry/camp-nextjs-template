@@ -7,7 +7,7 @@ const mansalva = Mansalva({ weight: "400", subsets: ["latin"] })
 
 export default function Activities() {
   return (
-    <section className="flex flex-col h-[40rem]">
+    <section className="flex flex-col justify-center mt-[-38px] h-[44rem]">
       {/* Heading */}
       <header
         className={clsx(

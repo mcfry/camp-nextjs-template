@@ -1,9 +1,12 @@
-import "./globals.css"
+// External
 import type { Metadata } from "next"
 import { Bricolage_Grotesque } from "next/font/google"
-import Link from "next/link"
-import Image from "next/image"
 import clsx from "clsx"
+
+// Internal
+import "./globals.css"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] })
 
@@ -11,29 +14,6 @@ export const metadata: Metadata = {
   title: "",
   description: ""
 }
-
-const pages = [
-  {
-    path: "/",
-    name: "Home"
-  },
-  {
-    path: "/campsites",
-    name: "Campsites"
-  },
-  {
-    path: "/thingstodo",
-    name: "Things to Do"
-  },
-  {
-    path: "/events",
-    name: "Events"
-  },
-  {
-    path: "/about",
-    name: "About"
-  }
-]
 
 export default function RootLayout({
   children
@@ -43,29 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body className="min-h-screen bg-tanbase">
-        <nav
-          className={clsx(
-            "navbar justify-center bg-primary border-b-4 border-black drop-shadow-xl fixed top-0 z-50",
-            bricolage.className
-          )}
-        >
-          <Image
-            src="/bonfire.png"
-            width={50}
-            height={50}
-            className="mr-6"
-            alt="bonfire"
-          />
-          {pages.map(page => (
-            <Link
-              key={page.path}
-              href={page.path}
-              className="btn btn-primary normal-case text-xl text-accent"
-            >
-              {page.name}
-            </Link>
-          ))}
-        </nav>
+        <Navbar />
 
         <main
           className={clsx(
@@ -75,6 +33,8 @@ export default function RootLayout({
         >
           {children}
         </main>
+
+        <Footer />
       </body>
     </html>
   )
