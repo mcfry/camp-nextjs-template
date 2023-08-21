@@ -37,13 +37,15 @@ export default function Navbar() {
       )}
     >
       <div className="hidden md:flex">
-        <Image
-          src="/bonfire.png"
-          width={50}
-          height={50}
-          className="mr-6"
-          alt="bonfire"
-        />
+        <Link href={"/"}>
+          <Image
+            src="/bonfire.png"
+            width={50}
+            height={50}
+            className="mr-6"
+            alt="bonfire"
+          />
+        </Link>
         {pages.map(page => (
           <Link
             key={page.path}
@@ -56,13 +58,15 @@ export default function Navbar() {
       </div>
 
       <div className="flex w-full justify-between mx-4 md:hidden">
-        <Image
-          src="/bonfire.png"
-          width={50}
-          height={50}
-          className="mr-6"
-          alt="bonfire"
-        />
+        <Link href={"/"}>
+          <Image
+            src="/bonfire.png"
+            width={50}
+            height={50}
+            className="mr-6"
+            alt="bonfire"
+          />
+        </Link>
         <div className="dropdown-end dropdown z-30">
           <label tabIndex={0} className="btn btn-circle btn-ghost">
             <Image

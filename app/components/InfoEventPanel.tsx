@@ -40,15 +40,20 @@ export default function InfoEventPanel() {
       <div className="flex items-center justify-center h-[46rem] lg:h-[36rem]">
         <div
           className={clsx(
-            "relative",
-            "after:bg-primary after:absolute after:h-[300px] after:w-full after:sm:right-[-2rem] after:top-[-2rem] after:z-10",
-            "before:bg-accent before:absolute before:h-[300px] before:w-full before:sm:left-[-2rem] before:bottom-[-2rem] before:z-10"
+            "relative z-0",
+            "after:bg-primary after:absolute after:h-[300px] after:w-full after:sm:right-[-2rem] after:top-[-2rem] after:z-0",
+            "before:bg-accent before:absolute before:h-[300px] before:w-full before:sm:left-[-2rem] before:bottom-[-2rem] before:z-0"
           )}
         >
-          <picture className="relative z-40">
+          <picture className="relative">
             <Image
               src="/hiker.jpg"
-              className="z-40"
+              className="relative opacity-[.99]"
+              style={{
+                transform: "translate3d(0, 0, 0px)",
+                WebkitTransform: "translate3d(0, 0, 0px)",
+                zIndex: 9
+              }}
               width={400}
               height={700}
               alt="hiker"
