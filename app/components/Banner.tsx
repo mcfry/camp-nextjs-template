@@ -3,7 +3,7 @@ import "./Banner.css"
 
 export default function Banner() {
   return (
-    <section className="flex flex-col justify-center items-center top-[0%] relative h-[18rem] xs:h-[22rem] sm:h[30rem] md:h-[35rem] lg:h-[40rem]">
+    <section className="flex flex-col justify-center items-center !top-[-30px] xs:!top-[-10px] xl:!top-[0%] relative h-[18rem] xs:h-[22rem] sm:h[30rem] md:h-[35rem] lg:h-[40rem]">
       <div className="flex flex-col justify-center items-center font-bold h-full z-10">
         <span className="text-5xl sm:text-7xl md:text-9xl text-white layered-text-shadow">
           OPEN NOW
@@ -18,7 +18,7 @@ export default function Banner() {
         width={0}
         sizes="100vw"
         layout="fill"
-        className="w-full md:h-full object-none absolute !top-[-30px] xs:top-[-10px]"
+        className="w-full md:h-full object-none absolute"
         style={{ objectPosition: "0% 50%" }}
         priority={true}
         alt="banner"

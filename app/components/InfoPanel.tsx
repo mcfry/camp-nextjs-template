@@ -17,11 +17,10 @@ export default function InfoPanel() {
       <div className="w-80 md:w-96">
         <p>
           Visit a place where family fun is the main attraction and memories are
-          waiting to be made. Jellystone Park™ Quarryville, PA is an
-          award-winning Pennsylvania campground located a short distance away
-          from Philadelphia. It's not just a campground, it's Jellystone Park™!
-          Plus, only 50% down is required to book on all future bookings -
-          allowing you s'more flexibility!
+          waiting to be made. Wild Adventures Camp-Resort is an award-winning
+          Arizona campground located a short distance away from some other place
+          in Arizona. It's not just a campground, it's Wild Adventures! Plus,
+          only 50% down is required at booking - giving you s'more flexibility!
         </p>
       </div>
     </section>

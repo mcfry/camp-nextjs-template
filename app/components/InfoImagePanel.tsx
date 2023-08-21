@@ -56,11 +56,11 @@ export default function InfoImagePanel({
                 src={imageSrc}
                 width={400}
                 height={400}
-                className="grid w-[400px] h-[266px] rounded bg-primary text-primary-content place-content-center"
+                className="grid w-[300px] xs:w-[400px] h-[266px] object-cover rounded bg-primary text-primary-content place-content-center"
                 alt={imageAlt}
               />
-              <div className="grid w-[400px] h-[266px] rounded bg-accent text-accent-content place-content-center" />
-              <div className="grid w-[400px] h-[266px] rounded bg-secondary text-secondary-content place-content-center" />
+              <div className="grid w-[300px] xs:w-[400px] h-[266px] rounded bg-accent text-accent-content place-content-center" />
+              <div className="grid w-[300px] xs:w-[400px] h-[266px] rounded bg-secondary text-secondary-content place-content-center" />
             </div>
           </div>
         </>
@@ -74,11 +74,11 @@ export default function InfoImagePanel({
                 src={imageSrc}
                 width={400}
                 height={400}
-                className="grid w-[400px] h-[266px] rounded bg-primary text-primary-content place-content-center"
+                className="grid w-[300px] xs:w-[400px] h-[266px] object-cover rounded bg-primary text-primary-content place-content-center"
                 alt={imageAlt}
               />
-              <div className="grid w-[400px] h-[266px] rounded bg-accent text-accent-content place-content-center" />
-              <div className="grid w-[400px] h-[266px] rounded bg-secondary text-secondary-content place-content-center" />
+              <div className="grid w-[300px] xs:w-[400px] h-[266px] object-cover rounded bg-accent text-accent-content place-content-center" />
+              <div className="grid w-[300px] xs:w-[400px] h-[266px] object-cover rounded bg-secondary text-secondary-content place-content-center" />
             </div>
           </div>
           <div className="lg:flex-[11]">
