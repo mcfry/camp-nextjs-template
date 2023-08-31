@@ -5,9 +5,12 @@ import Image from "next/image"
 import { DOMAIN } from "@/app/constants/routes"
 
 async function getTestimonials() {
-  const res = await fetch(DOMAIN + "/api/testimonials?populate=*", {
+  const res = await fetch(DOMAIN + "/strapi-api/testimonials?populate=*", {
     headers: {
       Authorization: `bearer ${process.env.API_KEY}`
+    },
+    next: {
+      tags: ["testimonials"] // for manual revalidation
     }
   }).then(response => {
     return response.json()

@@ -9,9 +9,12 @@ import { DOMAIN } from "@/app/constants/routes"
 const mansalva = Mansalva({ weight: "400", subsets: ["latin"] })
 
 async function getCampsites() {
-  const res = await fetch(DOMAIN + "/api/campsites?populate=*", {
+  const res = await fetch(DOMAIN + "/strapi-api/campsites?populate=*", {
     headers: {
       Authorization: `bearer ${process.env.API_KEY}`
+    },
+    next: {
+      tags: ["campsites"] // for manual revalidation
     }
   }).then(response => {
     return response.json()
