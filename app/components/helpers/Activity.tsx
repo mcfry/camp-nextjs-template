@@ -31,7 +31,9 @@ export default function Activity({
             alt={imageObj1.name}
           />
         </picture>
-        <span className="absolute ml-2 mt-5">{imageObj1.name}</span>
+        <span className="w-40 text-center absolute left-[-48px] mt-5">
+          {imageObj1.name}
+        </span>
       </div>
       <div
         className={clsx(
@@ -54,7 +56,9 @@ export default function Activity({
             alt={imageObj2.name}
           />
         </picture>
-        <span className="absolute left-[-4px] mt-5">{imageObj2.name}</span>
+        <span className="w-40 text-center absolute left-[-48px] mt-5">
+          {imageObj2.name}
+        </span>
       </div>
     </div>
   )

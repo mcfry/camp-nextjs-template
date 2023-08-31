@@ -22,12 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light">
-      <body className="min-h-screen bg-tanbase">
+      <body className="flex flex-col min-h-screen bg-tanbase">
         <Navbar />
 
         <main
           className={clsx(
-            "flex flex-col mt-16 text-black",
+            "flex flex-col mt-16 text-black min-h-screen flex-grow",
             bricolage.className
           )}
         >
