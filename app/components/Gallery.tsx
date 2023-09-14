@@ -21,7 +21,6 @@ async function getCampsites() {
   })
 
   if (res.error) {
-    console.log(res.error)
     return null
   } else {
     return res
@@ -43,7 +42,7 @@ export default async function Gallery() {
       </span>
       <div className="grid grid-cols-1 grid-rows-12 gallery-lg:grid-cols-2 gallery-lg:grod-rows-6 xl:grid-cols-3 xl:grid-rows-4 gap-4">
         {campsites &&
-          campsites.data.map(({ attributes }: any, i: number) => (
+          campsites.data.slice(0, 12).map(({ attributes }: any, i: number) => (
             <div key={i} className="w-[300px] xs:w-[400px]">
               <picture className="relative h-[400px]">
                 <Image

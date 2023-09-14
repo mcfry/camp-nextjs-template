@@ -1,6 +1,8 @@
 import Image from "next/image"
 import "./Banner.css"
 
+import bannerImage from "../../public/banner.jpg"
+
 export default function Banner() {
   return (
     <section className="flex flex-col justify-center items-center !top-[-30px] xs:!top-[-10px] xl:!top-[0%] relative h-[18rem] xs:h-[22rem] sm:h[30rem] md:h-[35rem] lg:h-[40rem]">
@@ -13,12 +15,11 @@ export default function Banner() {
         </span>
       </div>
       <Image
-        src="/banner.jpg"
+        src={bannerImage}
         height={0}
         width={0}
         sizes="100vw"
-        layout="fill"
-        className="w-full md:h-full object-none absolute"
+        className="w-full md:h-full object-cover absolute"
         style={{ objectPosition: "0% 50%" }}
         priority={true}
         alt="banner"
